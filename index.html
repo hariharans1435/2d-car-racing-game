@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2D Car Racing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Start Screen -->
+  <div id="start-screen">
+    <h1>🚗 Infinite Car Racer</h1>
+    <button id="start-button">Start Game</button>
+  </div>
+
+  <!-- Game Area -->
+  <div id="game">
+    <!-- HUD -->
+    <div id="hud">
+      <div id="score">Score: 0</div>
+      <div id="high-score">High Score: 0</div>
+      <button id="pause-button">⏸️</button>
+      <button id="music-toggle">🔊</button>
+    </div>
+
+    <!-- Road -->
+    <div id="road">
+      <div id="player"></div>
+    </div>
+
+    <!-- Touch Controls -->
+    <div id="touch-controls">
+      <button id="left-btn">⟵</button>
+      <button id="jump-btn">⬆</button>
+      <button id="right-btn">⟶</button>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over">
+      Game Over<br>
+      <button onclick="location.reload()">Restart</button>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="move-sound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_788e1a43b2.mp3?filename=pop-94319.mp3"></audio>
+  <audio id="crash-sound" src="audio/car-crash.mp3"></audio>
+  <audio id="bg-music" loop src="audio/game-music-loop.mp3"></audio>
+  <audio id="coin-sound" src="audio/coin.mp3"></audio>
+  <audio id="shield-sound" src="audio/shield.mp3"></audio>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
